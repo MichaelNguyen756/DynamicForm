@@ -26,7 +26,26 @@ export class DynamicForm extends React.Component {
 
 		let $fieldGroups = document.querySelectorAll('.field-group');
 
-		
+		let  contactObject = {};
+
+		//	The field group that contains the contact details may have an array of contact details ('.contact-field')
+		$fieldGroups.forEach(group => {
+			let classNames = group.className().replace('field-group', '').trim();
+
+			if(classNames === 'contact-number') {
+				let $contacts = document.querySelectorAll('contact-group');
+
+				if ($contacts.length !== 0){
+					$contacts.forEach(contact => {
+						let contactType = contact.attributes['data-contact-type'];
+						let contactNumber = contact.querySelector('.contact-value').value;
+
+						if(contactNumber !== undefined)
+							contactObject[contactType] = contactNumber;
+					});
+				}
+			}
+		});
 	}
 
 	render() {
