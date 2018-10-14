@@ -1,0 +1,26 @@
+{
+  "name": "DynamicForm",
+  "version": "1.0.0",
+  "description": "A React component containing multiple form entries for a person's contact details",
+  "main": "index.js",
+  "repository": "https://github.com/MichaelNguyen756/DynamicForm.git",
+  "author": "Michael Nguyen",
+  "license": "MIT",
+  "scripts": {
+    "babel": "babel src --out-dir com",
+    "webpack": "webpack --config webpack.config.js",
+    "start": "yarn run babel && yarn run webpack",
+    "test": "echo hi"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}

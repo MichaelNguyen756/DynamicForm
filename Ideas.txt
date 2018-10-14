@@ -1,0 +1,60 @@
+General structure:
+[Label with form type eg. Name] [input - place to put in text]
+
+[
+	{
+		fieldName: 'Name',
+		fieldNameClass: "name",
+		type: 'text',
+		required: true
+	},
+	{
+		fieldName: 'Date of Birth',
+		fieldNameClass: "dob",
+		type: 'date',
+		required: true
+	},
+	{
+		fieldName: 'Gender',
+		fieldNameClass: "gender",
+		type: 'radio',
+		options: [
+			"Male",
+			"Female",
+			"Other"
+		],
+		required: false
+	},
+	{
+		fieldName: 'Contact Number',
+		fieldNameClass: "contact-number",
+		type: 'text',
+		required: false
+	},
+	{
+		fieldName: 'Required Guardian Consent',
+		fieldNameClass: "consent-check",
+		type: 'checkbox',
+		required: false,
+		children: [
+			{
+				fieldName: 'Guardian Details',
+				type: 'text',
+				required: null
+			}
+			...
+		]
+	}	
+]
+
+Contact number can have different types of contact hence for example:
+[
+	{
+		type: 'mobile',
+		value: ''
+	},
+	{
+		type: 'home',
+		value: ''
+	}
+]
