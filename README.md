@@ -11,3 +11,6 @@ Prerequisites:
 Steps:
   1. Run "yarn install", to get all the required React libraries and depenedencies listed in package.json.
   2. Run "yarn run start", to start building the React project itself.
+
+Notes:
+  - Amount of time spent on this project: 2 hours (Including setting up Webpack and Babel)
