@@ -7,6 +7,7 @@ To build, open a terminal/command prompt and change the current path to this fol
 
 Prerequisites:
   - Node.js needs to be installed in order to build the files.
+  - Yarn is needed to build and compile the src files
 
 Steps:
   1. Run "yarn install", to get all the required React libraries and depenedencies listed in package.json.
