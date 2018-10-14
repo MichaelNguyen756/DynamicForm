@@ -58,3 +58,21 @@ Contact number can have different types of contact hence for example:
 		value: ''
 	}
 ]
+
+Output can be as follows (as JSON): 
+{
+    name: "Michael Nguyen",
+    dob: "1991-07-21",
+    gender: 1,
+    contact: [{
+        type: "mobile",
+        value: "0400123123"
+    },{
+        type: "home",
+        value: "610000000"
+    }],
+    guardian: {
+        name: "Jane Foo",
+        contact: "0400123123"
+    }
+}
