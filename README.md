@@ -14,4 +14,4 @@ Steps:
   2. Run "yarn run start", to start building the React project itself.
 
 Notes:
-  - Amount of time spent on this project: 2 hours (Including setting up Webpack and Babel)
+  - Amount of time spent on this project: 2 hours and 30 minutes (Including setting up Webpack and Babel)
